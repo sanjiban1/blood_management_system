@@ -1,0 +1,30 @@
+RewriteEngine On    # Turn on the rewriting engine
+# not rewrite css, js and images
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpg|gif|png)$ [NC]
+
+RewriteRule  ^category/(.*)$/?$                 category.php?slug=$1              [NC,L]
+RewriteRule  ^page/(.*)$/?$                     page.php?slug=$1                  [NC,L]
+RewriteRule  ^news/(.*)$/?$                     news.php?slug=$1                  [NC,L]
+RewriteRule  ^donor/(.*)$/?$                    donor.php?id=$1                   [NC,L]
+RewriteRule  ^donor-edit/(.*)$/?$               donor-edit.php?id=$1              [NC,L]
+RewriteRule  ^donor-delete/(.*)$/?$             donor-delete.php?id=$1              [NC,L]
+RewriteRule  ^agent/(.*)$/?$                    agent.php?id=$1                   [NC,L]
+RewriteRule  ^blood-groupwise-result/(.*)$/?$   blood-groupwise-result.php?id=$1  [NC,L]
+
+RewriteRule  ^search$               search.php              [NC,L]
+RewriteRule  ^login$                login.php               [NC,L]
+RewriteRule  ^logout$      	       logout.php              [NC,L]
+RewriteRule  ^registration$         registration.php        [NC,L]
+RewriteRule  ^forget-password$      forget-password.php     [NC,L]
+RewriteRule  ^dashboard$      	   dashboard.php           [NC,L]
+RewriteRule  ^payment$      	       payment.php             [NC,L]
+RewriteRule  ^donor-add$      	   donor-add.php           [NC,L]
+RewriteRule  ^donor-view$      	   donor-view.php          [NC,L]
+RewriteRule  ^profile-edit$         profile-edit.php        [NC,L]
+RewriteRule  ^profile-photo-edit$   profile-photo-edit.php  [NC,L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

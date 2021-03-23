@@ -1,0 +1,200 @@
+/*Layout*/
+
+@media only screen and (min-width: 992px) {
+	.listing-item-car-condition:nth-child(2n+1) {
+	    clear: both!important;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+	.widget-item input[type="text"]{
+		width: 64%;
+	}
+	.widget-item input[type="submit"]{
+		padding: 0 5px;
+	}
+	
+}
+
+
+/*Tablet Layout*/
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+	ul.main-menu li a{
+		padding: 20px 15px;
+	}
+	ul.main-menu li a {
+		font-size: 14px;
+	}
+	ul.main-menu li ul {
+		top: 60px;
+	}
+	ul.main-menu li ul li a{
+		padding: 12px 20px;
+	}
+	.widget-item input[type="text"]{
+		width: 88%;
+	}
+	.menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+	.logo {
+		text-align: center;
+	}
+}
+
+
+/*mobail small layout*/
+
+@media only screen and (max-width:767px) {
+	.top-header {
+		text-align: center;
+	}
+	.top-header-right {
+		float: none;
+	}
+	.top-header-right a {
+		display: block;
+		margin-left: 0;
+	}
+	.top-header-left p {
+		display: block;
+		margin-right: 0;
+		margin-top: 10px;
+	}
+	.menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+	.logo {
+		text-align: center;
+		padding: 5px 0;
+	}
+	.slider-item {
+		padding: 50px 0;
+	}
+	.slider-text h1 {
+		font-size: 28px;
+	}
+	.featured-area,
+	.testimonial-area,
+	.latest-news {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.headline h2 {
+		font-size: 30px;
+	}
+	.featured-gallery .owl-nav .owl-prev,
+	.featured-gallery .owl-nav .owl-next,
+	.latest-gallery .owl-nav .owl-prev,
+	.latest-gallery .owl-nav .owl-next {
+		top: -30px;
+	}
+	.newsletter-submit input[type="submit"] {
+		width: 25%;
+	}
+	.listing-price {
+		margin-top: 30px;
+	}
+	.listing-text h2 {
+		margin-top: 30px;
+	}
+	.listing-photo {
+		height: 380px;
+	}
+}
+
+
+/*mobail large layout*/
+
+@media only screen and (min-width: 480px) and (max-width:767px) {
+	.slider-item {
+		padding: 85px 0;
+	}
+	.slider-text h1 {
+		font-size: 34px;
+	}
+	.featured-gallery .owl-nav .owl-prev,
+	.featured-gallery .owl-nav .owl-next {
+		top: -40px;
+	}
+	.car-detail-photo{
+		height: 370px;
+	}
+	.lightbox-item{
+		line-height: 370px;
+	}
+	
+}
+
+@media only screen and (max-width:540px){
+	.car-detail-photo{
+		height: 270px;
+	}
+	.lightbox-item{
+		line-height: 270px;
+	}
+	.car-main-tab li{
+		display: block;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width:435px){
+	.car-detail-photo{
+		height: 220px;
+	}
+	.lightbox-item{
+		line-height: 220px;
+	}
+}
+@media only screen and (min-width: 610px) and (max-width:767px){
+	/*Blog*/
+	.blog-page-area .col-xs-12{
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width:609px){
+	/*Blog*/
+	.blog-page-area .latest-item{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	.blog-item:nth-child(3n+1) {
+		clear: both;
+	}
+}
+
+@media only screen and (min-width: 610px) and (max-width: 991px) {
+	.blog-item:nth-child(2n+1) {
+		clear: both;
+	}
+}
+
+@media only screen and (max-width:500px){ 
+	.listing-text,
+	.listing-price {
+		width: 100%;
+	}
+	.listing-photo {
+		height: 250px;
+	}
+	.listing-price h2,
+	.listing-price a {
+		text-align: left;
+		float: none;
+	}
+
+}
